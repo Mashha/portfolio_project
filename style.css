@@ -44,6 +44,7 @@ body {
 .nav-item a:hover {
     background-image: linear-gradient(to right, #BF59A2, #00409A);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -74,6 +75,7 @@ h3 {
     font-size: 6rem;
     background-image: linear-gradient(to right, #BF59A2, #00409A);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Hurricane', cursive;
 }
@@ -87,6 +89,7 @@ i:hover {
     background-image: linear-gradient(to right, #BF59A2, #00409A);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .social-icons {
@@ -144,6 +147,7 @@ i:hover {
     background-image: linear-gradient(to right, #BF59A2, #00409A);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 @media (min-width: 1700px)
