@@ -19,9 +19,13 @@ body {
 }
 
 #navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
 }
 
 .nav-items {
@@ -35,7 +39,6 @@ body {
     color: black;
     margin-right: 30px;
     font-size: 1.5rem;
-    
 }
 
 .nav-item a:hover {
@@ -75,6 +78,7 @@ h3 {
 }
 
 i {
+    color: black;
     padding: 10px;
 }
 
@@ -92,13 +96,17 @@ i:hover {
     left: 10px;
 }
 
+
 .right {
-   text-align: right;
-    
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
 }
 
 .main-image {
-    width: 50%;
+    margin: 100px 0;
+    width: 100%;
 }
 
 #projects {
