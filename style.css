@@ -19,9 +19,13 @@ body {
 }
 
 #navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
 }
 
 .nav-items {
@@ -35,7 +39,6 @@ body {
     color: black;
     margin-right: 30px;
     font-size: 1.5rem;
-    
 }
 
 .nav-item a:hover {
@@ -54,6 +57,7 @@ body {
     position: absolute;
     top: 40%;
     left: 10%;
+    height: 90vh;
 }
 
 h1 {
@@ -75,6 +79,7 @@ h3 {
 }
 
 i {
+    color: black;
     padding: 10px;
 }
 
@@ -92,13 +97,21 @@ i:hover {
     left: 10px;
 }
 
+.fa-brands {
+    font-size: 2em;
+}
+
+
 .right {
-   text-align: right;
-    
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
 }
 
 .main-image {
-    width: 50%;
+    margin: 150px 0;
+    width: 100%;
 }
 
 #projects {
@@ -117,8 +130,209 @@ i:hover {
     box-shadow: -3px -4px 81px -11px rgba(0,0,0,0.34);
 }
 
+.link {
+    text-align: center;
+}
 
+.link a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
 
+.link a:hover {
+    background-image: linear-gradient(to right, #BF59A2, #00409A);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1700px)
+{
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    #name {
+        font-size: 8rem;
+    }
+     
+    .social-icons {
+        top: 47%;
+    }
+
+    .main-image {
+        margin: 150px 10px;
+    }
+}
+
+@media (max-width: 1500px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    #name {
+        font-size: 6rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .main-image {
+        width: 80%;
+        margin: 150px 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    h1{
+        font-size: 1.5rem;
+    }
+
+    #name {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    .main-image {
+        width: 60%;
+    }
+
+    .fa-brands {
+        font-size: 1.5em;
+    }
+
+    #projects {
+        margin: 0 10px;
+    }
+
+    .project-img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #name {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 0.6rem;
+    }
+
+    .main-image {
+        width: 50%;
+    }
+
+    .fa-brands {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        top: 59%;
+        left: 63px;
+        z-index: 2;
+    }
+
+    .nav-item a{ 
+        font-size: 1rem;
+    }
+
+    #projects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .right {
+        justify-content: center;
+    }
+
+    .main-image {
+        margin: 80px 0;
+    }
+    #welcome-section {
+        top: 45%;
+        left: 30%;
+        text-align: center;
+    }
+
+    .social-icons {
+        top: 60%;
+        left: 40%;
+    }
+
+}
+
+@media (max-width: 540px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+
+    .main-image {
+        width: 50%;
+    }
+
+    #welcome-section {
+        top: 40%;
+        left: 25%;
+    }
+
+    .social-icons {
+        top: 52%;
+        left: 29%;
+    }
+
+    .project-img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+    
+    .nav-items a {
+        margin: 0;
+    }
+    
+    .right {
+        margin-top:  80px;
+    }
+
+    #welcome-section {
+        top: 50%;
+    }
+
+    .social-icons {
+        top: 62%;
+    }
+
+    .project-img {
+        height: 100px;
+    }
+}
 
 
 
