@@ -130,6 +130,22 @@ i:hover {
     box-shadow: -3px -4px 81px -11px rgba(0,0,0,0.34);
 }
 
+.link {
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.link a:hover {
+    background-image: linear-gradient(to right, #BF59A2, #00409A);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media (min-width: 1700px)
 {
     h1 {
@@ -188,6 +204,14 @@ i:hover {
     .fa-brands {
         font-size: 1.5em;
     }
+
+    #projects {
+        margin: 0 10px;
+    }
+
+    .project-img {
+        height: 250px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -220,6 +244,14 @@ i:hover {
 
     .nav-item a{ 
         font-size: 1rem;
+    }
+
+    #projects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-img {
+        height: 200px;
     }
 }
 
@@ -266,6 +298,10 @@ i:hover {
         top: 52%;
         left: 29%;
     }
+
+    .project-img {
+        height: 150px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -291,6 +327,10 @@ i:hover {
 
     .social-icons {
         top: 62%;
+    }
+
+    .project-img {
+        height: 100px;
     }
 }
 
