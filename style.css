@@ -82,6 +82,7 @@ i:hover {
     background-image: linear-gradient(to right, #BF59A2, #00409A);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .social-icons {
